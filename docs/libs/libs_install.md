@@ -28,3 +28,10 @@ pnpm i nodemon @aws-sdk/client-s3 drizzle-orm express mysql2
 ```
 pnpm i --save-dev @types/node
 ```
+
+#### Security Web Pages
+
+```
+pnpm i cors
+
+```
