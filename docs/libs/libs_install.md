@@ -32,6 +32,12 @@ pnpm i --save-dev @types/node
 #### Security Web Pages
 
 ```
-pnpm i cors
+pnpm add cors helmet 
 
+```
+
+### Drizzle Orm 
+```
+pnpm i drizzle-orm mysql2
+pnpm i -D drizze-kit
 ```

@@ -26,9 +26,6 @@ importers:
       drizzle-orm:
         specifier: 0.30.8
         version: 0.30.8(mysql2@3.9.7)
-      esbuild-register:
-        specifier: ^3.5.0
-        version: 3.5.0(esbuild@0.19.12)
       express:
         specifier: ^4.19.2
         version: 4.19.2
