@@ -1,6 +1,5 @@
 import { drizzle } from "drizzle-orm/mysql2";
 import mysql from "mysql2/promise";
-import { userSchema } from "../../../services/schemas/users/userSchema";
 import { env } from "../../../utils/dotenv/env";
 
 const poolConnection = mysql.createPool({
@@ -13,13 +12,4 @@ const poolConnection = mysql.createPool({
 
 export const db = drizzle(poolConnection); 
 
-async function testConnection() {
-    try {
-        const result = await db.select().from(userSchema)
-        console.log(result);
-    } catch (error) {
-        console.error('Erro ao testar conexão MySQL:', error);
-    }
-}
-testConnection();
 

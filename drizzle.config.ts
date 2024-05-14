@@ -5,7 +5,7 @@ export const dbUrl = `mysql://${env.variables.DB_USER}:${env.variables.DB_PASSWO
 
 export default {
   schema: "./api/src/services/schemas/user/userShema.ts*",
-  out: "./api/src/infra/dataBase/drizzle",
+  out: "./drizzle",
   driver: 'mysql2', 
   dbCredentials: {
     connectionString: String(dbUrl),
