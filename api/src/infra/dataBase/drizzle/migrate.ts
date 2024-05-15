@@ -18,7 +18,7 @@ const dbMigrate = async ()=>{
     console.log("🚀 Migration started...");
 
     await migrate(dbMigrator, {
-      migrationsFolder:path.resolve("migrations")
+      migrationsFolder:path.resolve("drizzle")
     });
     console.log("✅ Migration completed.");
     process.exit(0);
