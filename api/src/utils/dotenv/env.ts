@@ -12,6 +12,7 @@ export default interface Variables{
     DB_PASSWORD:string;
     DB_NAME:string;
     DB_PORT:string;
+    SERVER_PORT:string;
 }
 
 class Env{
@@ -26,7 +27,8 @@ class Env{
         DB_USER:this.getEnv('DB_USER'),
         DB_PASSWORD:this.getEnv('DB_PASSWORD'),
         DB_NAME:this.getEnv('DB_NAME'),
-        DB_PORT:this.getEnv('DB_PORT')
+        DB_PORT:this.getEnv('DB_PORT'),
+        SERVER_PORT:this.getEnv('SERVER_PORT')
     };
 
     private getEnv(envName: string): string {

@@ -1,5 +1,7 @@
-import { BaseDomain } from "../../../../packages/services/core/baseDomain";
-import { BaseMapper } from "../../../../packages/services/core/baseMapper";
+
+import { BaseDomain } from "../../../../../packages/services/core/baseDomain";
+import{BaseMapper} from "../../../../../packages/services/core/baseMapper";
+
 import { Role } from "../domain/role";
 
 class RoleMapper extends BaseMapper{
