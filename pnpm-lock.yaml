@@ -41,9 +41,6 @@ importers:
       mysql2:
         specifier: ^3.9.7
         version: 3.9.7
-      nodemon:
-        specifier: ^3.1.0
-        version: 3.1.0
     devDependencies:
       '@types/body-parser':
         specifier: ^1.19.5
@@ -60,6 +57,9 @@ importers:
       '@types/node':
         specifier: ^20.12.11
         version: 20.12.11
+      nodemon:
+        specifier: ^3.1.0
+        version: 3.1.0
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
