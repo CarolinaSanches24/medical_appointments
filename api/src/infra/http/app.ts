@@ -5,7 +5,7 @@ import { v1Router } from '../router/v1Router';
 import bodyParser from 'body-parser';
 import compression from 'compression';
 
-const app: Express = express();
+export const app: Express = express();
 
 const options = {
 	threshold: '1kb',
@@ -25,3 +25,5 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(helmet());
 
 app.use('/', v1Router);
+
+

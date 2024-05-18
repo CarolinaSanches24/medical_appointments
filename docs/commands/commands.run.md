@@ -8,3 +8,5 @@ docker-compose up -d
 ```
 npm run generate
 ```
+
+### Start Project
