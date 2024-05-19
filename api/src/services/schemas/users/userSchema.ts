@@ -1,4 +1,4 @@
-import { mysqlTable, varchar,  mysqlEnum , int} from "drizzle-orm/mysql-core";
+import { varchar, int, mysqlTable} from "drizzle-orm/mysql-core";
 import { baseColumns } from "../baseColums";
 
 export const userSchema = mysqlTable("users", {
