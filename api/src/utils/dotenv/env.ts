@@ -1,8 +1,8 @@
 require('dotenv').config();
 
 export default interface Variables{
-    // JWT_SECRET: string;
-	// REDIS_URL: string;
+    JWT_SECRET: string;
+	REDIS_URL: string;
     // DATABASE_URL: string;
     // DATABASE_SCHEMA: string;
     // ADMIN_CREDENCIALS_USERNAME: string;
@@ -17,8 +17,8 @@ export default interface Variables{
 
 class Env{
     public variables: Variables = {
-        // JWT_SECRET: this.getEnv('JWT_SECRET'),
-        // REDIS_URL: this.getEnv('REDIS_URL'),
+        JWT_SECRET: this.getEnv('JWT_SECRET'),
+        REDIS_URL: this.getEnv('REDIS_URL'),
         // DATABASE_URL: this.getEnv('DATABASE_URL'),
         // DATABASE_SCHEMA: this.getEnv('DATABASE_SCHEMA'),
         // ADMIN_CREDENCIALS_USERNAME: this.getEnv('ADMIN_CREDENCIALS_USERNAME'),

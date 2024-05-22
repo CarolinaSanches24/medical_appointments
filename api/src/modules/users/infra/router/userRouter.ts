@@ -2,7 +2,7 @@ import { Router } from "express";
 
 const userRouter: Router = Router();
 
-// userRouter.post('/create', (request, response) => createUserController.execute(request, response));
+userRouter.post('/create', (request, response) => createUserController.execute(request, response));
 
 // userRouter.post('/login', (request, response) => loginController.execute(request, response));
 

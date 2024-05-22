@@ -14,11 +14,11 @@ interface IBaseRepo {
   update<T>(id: number, data:object): Promise<void>;
 }
 
-export abstract class BaseRepo<T extends MySqlTable> implements IBaseRepo {
-  public readonly table: T;
+export abstract class BaseRepo implements IBaseRepo {
+  public readonly table: MySqlTable;
   public readonly redisInstance?: RedisClient;
 
-  constructor(table: T, redisInstance?: RedisClient) {
+  constructor(table: MySqlTable, redisInstance?: RedisClient) {
     this.table = table;
     this.redisInstance = redisInstance;
   }
